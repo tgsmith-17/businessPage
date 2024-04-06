@@ -1,0 +1,62 @@
+$mainHoverColor: #104F55;
+$secondaryHoverColor: #2F97C1;
+
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 30px 10%;
+  justify-content: flex-end;
+  width: 300%;
+  background: linear-gradient(0.25turn, $mainHoverColor, $secondaryHoverColor);
+  animation: fancyHoverExit .3s ease-in-out;
+  animation-iteration-count: 1;
+  h1 {
+    margin-right: auto;
+  }
+}
+
+.header:hover {
+  animation: fancyHoverEnter .3s ease-in-out;
+  animation-iteration-count: 1;
+  width: 100%;
+}
+
+@keyframes fancyHoverEnter {
+  from {
+    width: 300%;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes fancyHoverExit {
+  from {
+    width: 100%;
+  }
+
+  to {
+    width: 300%;
+  }
+}
+
+.links {
+  nav ul{
+    list-style-type: none;
+  }
+  li {
+    display: inline-block;
+    padding: 9px 25px;
+    height: max-content;
+    :hover {
+      color: rgb(209, 253, 255);
+    }
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+}
