@@ -10,7 +10,7 @@ import './styles/index.scss';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename='/businessPage/'>
       <Header />
       <Routes>
         <Route path='/' element={<Home />} />
