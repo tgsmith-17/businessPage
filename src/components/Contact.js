@@ -1,10 +1,8 @@
-// key=AIzaSyC4ZFSoryuetqu6wOunM_coO1Wq26BhARY
-
 const Contact = () => {
   return (
-    <div className="contact">
-      <h1>Contact Us</h1>
-      
+    <div className="main">
+      <h1>Email Us</h1>
+      <h5>*put email here, eventually*</h5>
     </div>
   );
 };

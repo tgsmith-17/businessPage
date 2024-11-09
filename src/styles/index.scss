@@ -1,4 +1,14 @@
-$backColor: #EEF6FC;
+:root {
+  --backColor: #EEF6FC;
+  --fontColor: #333;
+  --linkColor: cornflowerblue;
+}
+
+[data-theme="dark"] {
+  --backColor: #333;
+  --fontColor: #EEF6FC;
+  --linkColor: lightblue;
+}
 
 * {
   margin: 0;
@@ -17,9 +27,15 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  background-color: $backColor;
+  background-color: var(--backColor);
+  color: var(--fontColor);
+}
+
+a {
+  color: var(--linkColor);
 }
 
 
 @import './header';
 @import './home';
+@import './mainpages'

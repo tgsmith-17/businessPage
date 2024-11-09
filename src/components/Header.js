@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import ColorMode from "./ColorMode";
 
 const Header = () => {
   return (
@@ -14,6 +15,7 @@ const Header = () => {
           </ul>
         </nav>
       </div>
+      <ColorMode />
     </div>
   );
 };
